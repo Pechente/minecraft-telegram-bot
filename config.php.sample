@@ -1,0 +1,9 @@
+<?php
+$config = [
+  "bot_token" => "", // The token of your Telegram bot - this is provided by @BotFather after creating the bot
+  "server_url" => "localhost", // URL of your Minecraft server. Leave localhost in here if it's running on the same server as this script
+  "server_port" => "25565", // Minecraft server port, default is 25565
+  "chat_id" => "", // Starts with a dash. Invite @ChannelIdBot to your group chat or channel to easily find out the Chat ID
+  "lang" => "en", // The language your bot should speak - German (de) and English (en) are supported
+];
+?>

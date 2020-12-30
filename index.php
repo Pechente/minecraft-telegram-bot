@@ -4,6 +4,7 @@ include "config.php";
 include "bot/Telegram.php";
 require "query/MinecraftQuery.php";
 require "query/MinecraftQueryException.php";
+include "lang/" . $config["lang"] . ".php";
 
 use xPaw\MinecraftQuery;
 use xPaw\MinecraftQueryException;
@@ -35,7 +36,7 @@ function get_live_playerlist()
   global $config;
   $Query = new MinecraftQuery();
   try {
-    $Query->Connect("localhost", $config["server_port"]);
+    $Query->Connect($config["server_url"], $config["server_port"]);
     $playerlist = $Query->GetPlayers();
     sort($playerlist);
     return $playerlist;
@@ -57,6 +58,7 @@ function cache_playerlist($playerlist)
 
 function generate_message($live_playerlist, $cached_playerlist)
 {
+  global $lang;
   // The playerlist is an empty string if no players joined but we ALWAYS need an array for the following functions
   $live_playerlist_array = is_array($live_playerlist) ? $live_playerlist : [];
   $cached_playerlist_array = is_array($cached_playerlist)
@@ -73,14 +75,25 @@ function generate_message($live_playerlist, $cached_playerlist)
   );
 
   foreach ($players_joined as $player_joined) {
-    $message .= $player_joined . " joined the server. ";
+    $message .= $player_joined . " " . $lang["joined"] . " ";
   }
 
   foreach ($players_disconnected as $player_disconnected) {
-    $message .= $player_disconnected . " disconnected. ";
+    $message .= $player_disconnected . " " . $lang["disconnected"] . " ";
   }
 
-  $message .= count($live_playerlist_array) . " players connected.";
+  $player_count = count($live_playerlist_array);
+
+  switch ($player_count) {
+    case 0:
+      $message .= $lang["no_players_connected"];
+      break;
+    case 1:
+      $message .= $lang["one_player_connected"];
+      break;
+    default:
+      $message .= $player_count . " " . $lang["players_connected"];
+  }
   return $message;
 }
 
