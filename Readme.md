@@ -22,7 +22,7 @@ The goal of this script is to incentivise players to join their friends on your 
 6. Rename _config.php.sample_ to _config.php_ and fill in the settings.
 7. Every time the script is called, it will compare who's currently online to who was online the last time the cript was executed. If changes are detected, the script will dispatch a message on Telegram. It's therefore recommended to call the script in intervals using bash or a cron job / webcron. I find that an interval between 5 - 15 seconds works best.
 
-_Notice: The shorter the interval, the quicker the messages get postet. The longer the interval, the slower the bot will post updates to your chat but it will also post more events in a single message, therefore avoiding spam when multiple users join or leave within a short time frame. Figure out what works best for you._
+_Notice: The shorter the interval, the quicker the messages get posted. The longer the interval, the slower the bot will post updates to your chat but it will also post more events in a single message, therefore avoiding spam when multiple users join or leave within a short time frame. Figure out what works best for you._
 
 ### Troubleshooting
 
