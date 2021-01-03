@@ -4,6 +4,6 @@ $config = [
   "server_url" => "localhost", // URL of your Minecraft server. Leave localhost in here if it's running on the same server as this script
   "server_port" => "25565", // Minecraft server port, default is 25565
   "chat_id" => "", // Starts with a dash. Invite @ChannelIdBot to your group chat or channel to easily find out the Chat ID
-  "lang" => "en", // The language your bot should speak - German (de) and English (en) are supported
+  "lang" => "en", // The language your bot should speak - German (de), Russian (ru), Polish (pl) and of course English (en) are supported
 ];
 ?>

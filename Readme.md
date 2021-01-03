@@ -1,6 +1,6 @@
 # Minecraft Server Telegram Notification Bot
 
-This Bot notifies a group chat, channel or private chat in Telegram of players joining or leaving your Minecraft server.
+This bot notifies a group chat, channel or private chat in Telegram of players joining or leaving your Minecraft server.
 
 ![Minecraft Telegram Bot](https://i.imgur.com/uYDPugw.png)
 
@@ -11,6 +11,7 @@ The goal of this script is to incentivise players to join their friends on your 
 1. **Easily deployable script that will work on any webserver.**
 2. **Multiple events within a short time span will be merged into a single message.**
 3. **The script works with any Minecraft server, whether it's spigot or the plain Java server without the need to install any additional plugins.**
+4. **Support for multiple languages (currently English, German, Russian and Polish)**
 
 ## How to set up this script?
 
@@ -26,7 +27,7 @@ _Notice: The shorter the interval, the quicker the messages get posted. The long
 
 ### Troubleshooting
 
-If the bot doesn't work, just visit index.php manually on your webserver and check the output. Messages to chat will be mirrored and possible errors will be displayed alongside it.
+If the bot doesn't work, just visit index.php manually on your webserver and check the output. Messages to chat will be mirrored and possible errors will be displayed alongside it. Make sure to reload it to see changes as there's no auto-reload feature on index.php itself.
 
 ## Credits
 
