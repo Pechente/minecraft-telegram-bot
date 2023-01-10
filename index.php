@@ -78,6 +78,8 @@ function generate_message($live_playerlist, $cached_playerlist)
     $live_playerlist_array
   );
 
+  $message = "";
+
   foreach ($players_joined as $player_joined) {
     $message .= $player_joined . " " . $lang["joined"] . " ";
   }
