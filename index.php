@@ -1,5 +1,7 @@
 <?php
+
 $start = microtime(true);
+
 include "config.php";
 include "bot/Telegram.php";
 require "query/MinecraftQuery.php";
@@ -35,10 +37,12 @@ function get_live_playerlist()
 {
   global $config;
   $Query = new MinecraftQuery();
+
   try {
     $Query->Connect($config["server_url"], $config["server_port"]);
     $playerlist = $Query->GetPlayers();
     sort($playerlist);
+
     return $playerlist;
   } catch (MinecraftQueryException $e) {
     echo $e->getMessage();
@@ -47,8 +51,7 @@ function get_live_playerlist()
 
 function get_cached_playerlist()
 {
-  $playerlist = unserialize(file_get_contents("cache"));
-  return $playerlist;
+  return unserialize(file_get_contents("cache"));
 }
 
 function cache_playerlist($playerlist)
@@ -59,6 +62,7 @@ function cache_playerlist($playerlist)
 function generate_message($live_playerlist, $cached_playerlist)
 {
   global $lang;
+
   // The playerlist is an empty string if no players joined but we ALWAYS need an array for the following functions
   $live_playerlist_array = is_array($live_playerlist) ? $live_playerlist : [];
   $cached_playerlist_array = is_array($cached_playerlist)
@@ -100,6 +104,7 @@ function generate_message($live_playerlist, $cached_playerlist)
 function post_message_to_chat($message)
 {
   global $config;
+
   $telegram = new Telegram($config["bot_token"]);
   $content = ["chat_id" => $config["chat_id"], "text" => $message];
   $telegram->sendMessage($content);
