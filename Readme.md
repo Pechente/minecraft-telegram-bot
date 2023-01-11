@@ -4,7 +4,7 @@ This bot notifies a group chat, channel or private chat in Telegram of players j
 
 ![Minecraft Telegram Bot](https://i.imgur.com/uYDPugw.png)
 
-The goal of this script is to incentivise players to join their friends on your server without having to open up a website or the game itself. The script can easily be run on any webserver and currently supports both English and German language output.
+The goal of this script is to incentivise players to join their friends on your server without having to open up a website or the game itself. The script can easily be run on any webserver.
 
 ## Features
 
