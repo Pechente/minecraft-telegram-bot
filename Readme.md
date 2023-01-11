@@ -15,6 +15,10 @@ The goal of this script is to incentivise players to join their friends on your 
 
 ## How to set up this script?
 
+### Requirements
+
+- PHP with curl and mbstring
+
 ### Enable query property on server.properties
 
 Make sure that the [query property](https://minecraft.gamepedia.com/Server.properties) is enabled in your Minecraft server settings.
