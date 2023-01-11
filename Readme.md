@@ -15,7 +15,7 @@ The goal of this script is to incentivise players to join their friends on your 
 
 ## Setup
 
-### Requirements
+### 1. Requirements
 
 You will need a running minecraft server and php installed on it with curl and mbstring modules. To install php on ubuntu/debian machine, you can run:
 
@@ -25,11 +25,11 @@ sudo apt-get install php
 sudo apt-get install php-mbstring php-curl
 ```
 
-### Enable query property on server.properties
+### 2. Enable query property on server.properties
 
 Make sure that the [query property](https://minecraft.gamepedia.com/Server.properties) is enabled in your Minecraft server settings.
 
-### Clone this repo and make `cache`-file writable
+### 3. Clone this repo and make `cache`-file writable
 
 ```shell
 git clone https://github.com/Pechente/minecraft-telegram-bot.git  
@@ -42,11 +42,11 @@ Then change the permissions of the cache file in this repo like:
 chmod 755 cache
 ```
 
-### Create Telegram Bot with BotFather
+### 4. Create Telegram Bot with BotFather
 
 Create your Telegram Bot, save its token for later and add it to the group, super-group or channel your bot should be posting the updates to.
 
-### Get ID of the (super-)group or channel 
+### 5. Get ID of the (super-)group or channel 
 
 **⚠️ Info:** _I can’t really recommend the add-some-channel-id-info-bot-way, because they didn’t work properly for me and were just broken or deprecated._
 
@@ -69,7 +69,7 @@ The url-id-way won’t work as expected for «super group» chats. You will need
 1. Then run `php index.php` and check the bad telegram api response info. You will then find the right chat id under `parameters`.
 1. Copy the supplied chat id from the error response into your config.php and try the second step again. 
 
-### Create your config.php
+### 6. Create your config.php
 
 The `config.php` holds your telegram and minecraft server configs. Copy the file from the template and change the settings:
 
@@ -82,7 +82,7 @@ nano config.php
 
 The comments in the config will help you determine the right values.
 
-### Create Crontab / Execute the script
+### 7. Create Crontab / Execute the script
 
 To let run the script periodically you can add a script to the `crontab`:
 
