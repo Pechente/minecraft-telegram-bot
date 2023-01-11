@@ -67,6 +67,7 @@ The url-id-way won’t work as expected for «super group» chats. You will need
 
 1. Populate the `config.php` file with the chat id from the **simple groups** steps along with the other config options. 
 1. Then run `php index.php` and check the bad telegram api response info. You will then find the right chat id under `parameters`.
+1. Copy the supplied chat id from the error response into your config.php and try the second step again. 
 
 ### Create your config.php
 
