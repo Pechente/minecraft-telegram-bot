@@ -100,4 +100,6 @@ If the bot doesn't work, just visit `index.php` manually on your webserver and c
 
 ## Credits
 
-This script is based on [Pechente/minecraft-telegram-bot](https://github.com/Pechente/minecraft-telegram-bot).
+## Credits
+
+This script is based on [PHP Minecraft Query by xPaw](https://github.com/xPaw/PHP-Minecraft-Query), [TelegramBotPHP by Eleirbag89](https://github.com/Eleirbag89/TelegramBotPHP) and was slightly updated by [@Coderwelsch](https://github.com/Coderwelsch)
