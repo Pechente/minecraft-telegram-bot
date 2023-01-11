@@ -39,7 +39,7 @@ Login to https://web.telegram.com and open up the wanted channel or group. The i
 
 Same as for channels, but way simpler. The id (in the browser url) is the last part of the url and starts also with a dash. For example:
 
-Browser Url: `https://web.telegram.org/z/#-9693613342`
+Browser Url: `https://web.telegram.org/z/#-9693613342`  
 Your Group Id would be: `-9693613342`
 
 **For Super-Groups:**
