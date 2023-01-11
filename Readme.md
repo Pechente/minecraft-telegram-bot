@@ -60,11 +60,13 @@ chmod 755 cache
 
 ### Create your config.php
 
-The config.php holds your telegram and minecraft server configs. Copy the file from the template:
+The config.php holds your telegram and minecraft server configs. Copy the file from the template and change the new file according to your needs:
 
 ```shell
 cp config.php.sample config.php
 ```
+
+
 
 ### Create Crontab / Execute the script
 
@@ -84,4 +86,4 @@ If the bot doesn't work, just visit index.php manually on your webserver and che
 
 ## Credits
 
-This script is based on [Pechente/minecraft-telegram-bot](https://github.com/Pechente/minecraft-telegram-bot) and was forked by me because of the author’s afk-ness.
+This script is based on [Pechente/minecraft-telegram-bot](https://github.com/Pechente/minecraft-telegram-bot).
