@@ -110,6 +110,11 @@ function post_message_to_chat($message)
 
   $telegram = new Telegram($config["bot_token"]);
   $content = ["chat_id" => $config["chat_id"], "text" => $message];
+
+  if (isset($config["reply_to_message_id"]) && $config["reply_to_message_id"] != "") {
+    $content["reply_to_message_id"] = $config["reply_to_message_id"];
+  }
+  
   $result = $telegram->sendMessage($content);
 
   if ($result["error_code"] >= 400) 
