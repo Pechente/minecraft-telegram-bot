@@ -41,6 +41,7 @@ function get_live_playerlist()
   try {
     $Query->Connect($config["server_url"], $config["server_port"]);
     $playerlist = $Query->GetPlayers();
+    $playerlist = !is_array($playerlist) ? [] : $playerlist;
     sort($playerlist);
 
     return $playerlist;
