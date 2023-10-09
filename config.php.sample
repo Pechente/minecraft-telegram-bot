@@ -4,6 +4,7 @@ $config = [
   "server_url" => "localhost", // URL of your Minecraft server. Leave localhost in here if it's running on the same server as this script
   "server_port" => "25565", // Minecraft server port (not the rcon or query port!), default is 25565
   "chat_id" => "", // Starts with a dash
+  "reply_to_message_id" => "", // message_id of created topic thread if you want to send to a topic
   "lang" => "en", // The language your bot should speak – German (de), Russian (ru), Polish (pl) and of course English (en) are supported
 ];
 ?>
