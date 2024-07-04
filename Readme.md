@@ -11,7 +11,7 @@ The goal of this script is to incentivise players to join their friends on your 
 1. **Easily deployable script that will work on any webserver.**
 2. **Multiple events within a short time span will be merged into a single message.**
 3. **The script works with any Minecraft server, whether it's spigot or the plain Java server without the need to install any additional plugins.**
-4. **Support for multiple languages (currently English, German, Russian and Polish)**
+4. **Support for multiple languages (currently English, German, Russian, Polish and Spanish)**
 
 ## Setup
 
