@@ -50,7 +50,7 @@ Create your Telegram Bot, save its token for later and add it to the group, supe
 
 **⚠️ Info:** _I can’t really recommend the add-some-channel-id-info-bot-way, because they didn’t work properly for me and were just broken or deprecated._
 
-Login to https://web.telegram.com and open up the wanted channel or group. The id is part of the website url which is a bit different for each of the different kinds of chat types (group, channel or super group). 
+Login to https://web.telegram.org and open up the wanted channel or group. The id is part of the website url which is a bit different for each of the different kinds of chat types (group, channel or super group). 
 
 **[For Channels →](https://gist.github.com/mraaroncruz/e76d19f7d61d59419002db54030ebe35)**
 
